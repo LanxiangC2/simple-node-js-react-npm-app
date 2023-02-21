@@ -10,6 +10,7 @@ pipeline {
             steps {
                 echo 'Building'
                 sh 'npm --version'
+                sh 'npm install'
                 sh 'npm run build'
             }
         }
