@@ -12,8 +12,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building'
-                sh 'npm cache clean'
-                sh 'yarn install'
                 sh 'yarn build'
             }
         }
