@@ -13,9 +13,8 @@ pipeline {
             steps {
                 echo 'Building'
                 sh 'npm cache clean'
-                sh 'npm --version'
-                sh 'npm install'
-                sh 'npm run build'
+                sh 'yarn install'
+                sh 'yarn build'
             }
         }
         stage('Test') {
