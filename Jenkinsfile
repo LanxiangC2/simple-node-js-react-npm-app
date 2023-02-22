@@ -11,6 +11,7 @@ pipeline {
                 echo 'Building'
                 sh 'npm cache clean'
                 sh 'npm --version'
+                sh 'sudo chown -R $(whoami) ~/.npm'
                 sh 'npm install'
                 sh 'npm run build'
             }
