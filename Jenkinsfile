@@ -11,7 +11,7 @@ pipeline {
                 echo 'Building'
                 sh 'npm cache clean'
                 sh 'npm --version'
-                sh 'sudo npm install'
+                sh 'npm install --unsafe-perm=true'
                 sh 'npm run build'
             }
         }
