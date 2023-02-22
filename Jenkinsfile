@@ -6,7 +6,7 @@ pipeline {
                 echo 'Building'
                 sh 'npm cache clean'
                 sh 'npm --version'
-                sh 'npm install --unsafe-perm=true'
+                sh 'npm install'
                 sh 'npm run build'
             }
         }
